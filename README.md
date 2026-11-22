@@ -26,6 +26,29 @@
 
 案例来自一次真实的公开资料研究。企业、项目和个人身份、可反查细节及内部草稿均未公开；本页不提供完整 Skill 或安装包。
 
+## 怎么开始
+
+准备一份可用的产品资料，写清目标地区、要找的企业角色、必需证据和排除条件。第一次只研究少量候选，停在人工校准。不妨用这一句开工：
+
+> 我卖【产品】，想找【地区】的【企业角色】。先查公开资料：每家给项目证据、匹配理由和未知项，最后写下一步。只研究，不连邮箱、不发信、不定时。
+
+### 选择你的 Agent
+
+| 环境 | 推荐用法 | 兼容边界 |
+| --- | --- | --- |
+| [WorkBuddy](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) | 完整包可按官方技能导入入口尝试，或在任务里提供指令与资料；网页取证要有[可用浏览器](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Right-Sidebar)。 | 此前仅验证过文本工作流与子任务，不代表本包原生导入或浏览器已验证。 |
+| [DeepSeek Harness](https://www.deepseek.com/en/harness/) / [DeepSeek API](https://api-docs.deepseek.com/guides/tool_calls/) | Harness 用私有工作目录保存输出，并检查搜索／浏览工具；API 用你自己的宿主执行文件、网页等工具调用。 | DeepSeek 模型和 Harness 不是一回事；本包未在 DeepSeek Harness 安装实测。 |
+| [Codex](https://developers.openai.com/plugins/concepts/skills) | 在私有工作区放完整 Skill 目录，按项目 Skill 方式调用；需要网页取证时再给可用工具。 | Codex 支持 Skill 目录，但不等于本包全流程已跑过。 |
+| [Grok Bot](https://docs.x.ai/grok-bot/computer-and-apps) | 在 Bot 任务中给目标与范围，把完整说明放进获准访问的私有位置。有分工时，各角色交证据，由一个任务合并 CRM。 | 是工作流的实践来源，不代表此通用包支持原生导入。 |
+| [Muse](https://ai.meta.com/muse) / [Dots](https://help.openai.com/en/articles/20001530-getting-started-with-your-dot) | 把产品、候选条件、数据范围和停点当作一次任务交给个人 Agent；私下提供资料。 | 按账户可用的浏览与文件能力执行；未验证此包原生导入。 |
+| 自建 Agent harness | 最小组合是公开网页查证、文件读写和可续跑的任务记录；委派、CRM 连接和邮件可后加。 | 有模型不等于有浏览器、文件或邮件权限；缺工具就降级，不冒充已执行。 |
+
+### 使用边界
+
+- 已完成的项目证明能力，不证明正在采购。没有证据，标「待核」。
+- 公开研究、写文档内审稿都不需要邮箱。启用邮箱内存稿、查回信、发送时，分别核对账号、权限和授权；结果不明，不自动重发。
+- 私有资料、真实名单、回信和 CRM 记录不放进公开仓库，也不默认上传到未获准的宿主。长任务应记下最后核对位置、负责人和停止条件。
+
 ## 完整版咨询
 
 可通过原发布渠道联系作者，说明你的产品、目标市场和最想交给 AI 的一步。无需提供客户名单。
